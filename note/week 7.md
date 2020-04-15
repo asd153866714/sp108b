@@ -133,3 +133,12 @@ PS D:\110713305\sp\code\c\04-toolchain\gcc\03-macroExpand> ./max
 c=5
 ```
 
+### 04-make
+```
+PS D:\110713305\sp\code\c\04-toolchain\gcc\04-make> mingw32-make
+gcc -std=c99 -O0 sum.c main.c -o run
+PS D:\110713305\sp\code\c\04-toolchain\gcc\04-make> ./run 
+sum(10)=55
+PS D:\110713305\sp\code\c\04-toolchain\gcc\04-make> 
+```
+
