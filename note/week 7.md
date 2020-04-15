@@ -2,3 +2,5 @@
 
 ```
 D:\ccc\sp\code\c\03-asmVm\gcc\03-fib> gcc main.c fib.c -o fib
+D:\ccc\sp\code\c\03-asmVm\gcc\03-fib> ./fib
+fib(10)=89
