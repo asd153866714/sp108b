@@ -30,3 +30,20 @@ PS D:\110713305\sp\code\c\03-asmVm\gcc\05-globalcall> gcc globalCall.c -o global
 PS D:\110713305\sp\code\c\03-asmVm\gcc\05-globalcall> ./globalCall
 add(5, 8)=13
 ```
+
+## 04-toolchain
+
+### 01-toolchain
+```
+
+```
+### 02-link
+
+### 03-macroExpand
+```
+PS D:\110713305\sp\code\c\04-toolchain\gcc\03-macroExpand> gcc -E max.c -o max.i
+PS D:\110713305\sp\code\c\04-toolchain\gcc\03-macroExpand> gcc max.c -o max      
+PS D:\110713305\sp\code\c\04-toolchain\gcc\03-macroExpand> ./max
+c=5
+```
+
