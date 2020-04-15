@@ -1,5 +1,11 @@
 ## 系統程式第七周
 
+```
+$ gcc -fverbose-asm -S fib.c -o fib.s
+$ gcc -c fib.c -o fib.o
+$ gcc main.c fib.c -o fib               // 編譯 main.c 和 fib.c 並連結兩個檔案
+```
+
 ### fib.c
 ```
 D:\ccc\sp\code\c\03-asmVm\gcc\03-fib> gcc main.c fib.c -o fib
