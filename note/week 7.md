@@ -142,3 +142,10 @@ sum(10)=55
 PS D:\110713305\sp\code\c\04-toolchain\gcc\04-make> 
 ```
 
+### 05-makeLib
+```
+PS D:\110713305\sp\code\c\04-toolchain\gcc\05-makeLib> mingw32-make
+gcc -std=c99 -O0 -c sum.c -o sum.o
+ar -r libstat.a sum.o
+gcc -std=c99 -O0 -c main.c -o main.o
+gcc -std=c99 -O0 libstat.a main.o -L ./ -lstat -o run
