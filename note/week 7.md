@@ -1,9 +1,11 @@
 ## 系統程式第七周
 
 ```
-$ gcc -fverbose-asm -S fib.c -o fib.s
-$ gcc -c fib.c -o fib.o
-$ gcc main.c fib.c -o fib               // 編譯 main.c 和 fib.c 並連結兩個檔案
+$ gcc -fverbose-asm -S fib.c -o fib.s     // 產生組合語言
+$ gcc -c fib.c -o fib.o                   // 產生目的檔，只編譯不連結
+$ gcc main.c fib.c -o fib                 // 編譯 main.c 和 fib.c 並連結兩個檔案
+$ ./fib
+fib(10)=89
 ```
 
 ### fib.c
