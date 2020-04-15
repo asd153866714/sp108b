@@ -37,7 +37,27 @@ add(5, 8)=13
 ```
 
 ```
+
 ### 02-link
+```
+PS D:\ccc\sp\code\c\04-toolchain\gcc\02-link> gcc main.c sum.c -o run
+PS D:\ccc\sp\code\c\04-toolchain\gcc\02-link> ./run
+sum(10)=55
+
+$ gcc -S main.c -o main.s
+$ gcc -S sum.c -o sum.s
+
+$ gcc main.c sum.s -o run
+$ ./run
+sum(10)=55
+
+$ gcc -c sum.c -o sum.o
+$ gcc -c main.c -o main.o
+
+$ gcc main.o sum.o -o run
+$ ./run
+sum(10)=55
+```
 
 ### 03-macroExpand
 ```
