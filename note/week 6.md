@@ -9,6 +9,8 @@ mingw32-make
 ./vm ../test/sum.bin
 ```
 
+* sp\code\c\03-asmVm\hack\c :
+
 ```
 PS D:\110713305\sp\code\c\03-asmVm\hack\c> mingw32-make
 gcc -std=c99 -O0 asm.c c6.c -o asm
@@ -91,7 +93,7 @@ exit program !
 
 ### part 2 :
 
-* sp\code\c\03-asmVm\gcc\01-add
+* sp\code\c\03-asmVm\gcc\01-add :
 
 ```
 // 用 gcc 編譯
@@ -109,7 +111,7 @@ PS D:\ccc\sp\code\c\03-asmVm\gcc\01-add> gcc -fverbose-asm -S add.c -o add.s
 PS D:\ccc\sp\code\c\03-asmVm\gcc\01-add> gcc -fverbose-asm -S main.c -o main.s
 ```
 
-* sp\code\c\03-asmVm\gcc\00-foobar
+* sp\code\c\03-asmVm\gcc\00-foobar :
 
 ```
 PS D:\ccc\sp\code\c\03-asmVm\gcc\00-foobar> gcc -fverbose-asm -S foobar.c -o foobar.s
