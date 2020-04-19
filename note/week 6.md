@@ -111,7 +111,7 @@ PS D:\ccc\sp\code\c\03-asmVm\gcc\01-add> gcc -fverbose-asm -S add.c -o add.s
 PS D:\ccc\sp\code\c\03-asmVm\gcc\01-add> gcc -fverbose-asm -S main.c -o main.s
 ```
 
-* sp\code\c\03-asmVm\gcc\00-foobar :
+#### sp\code\c\03-asmVm\gcc\00-foobar :
 
 來源 : https://eli.thegreenplace.net/2011/02/04/where-the-top-of-the-stack-is-on-x86
 
