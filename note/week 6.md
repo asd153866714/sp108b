@@ -109,3 +109,11 @@ PS D:\ccc\sp\code\c\03-asmVm\gcc\01-add> gcc -S add.c -o add.s
 PS D:\ccc\sp\code\c\03-asmVm\gcc\01-add> gcc -fverbose-asm -S add.c -o add.s
 PS D:\ccc\sp\code\c\03-asmVm\gcc\01-add> gcc -fverbose-asm -S main.c -o main.s
 ```
+
+```
+sp\code\c\03-asmVm\gcc\00-foobar
+```
+
+```
+PS D:\ccc\sp\code\c\03-asmVm\gcc\00-foobar> gcc -fverbose-asm -S foobar.c -o foobar.s
+```
