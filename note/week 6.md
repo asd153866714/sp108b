@@ -1,5 +1,14 @@
 ## 03-asmVm
 ```
+git pull origin master
+mingw32-make
+./asm ../test/Add
+./vm ../test/Add.bin
+./asm ../test/sum
+./vm ../test/sum.bin
+```
+
+```
 PS D:\110713305\sp\code\c\03-asmVm\hack\c> mingw32-make
 gcc -std=c99 -O0 asm.c c6.c -o asm
 gcc -std=c99 -O0 vm.c -o vm
