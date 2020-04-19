@@ -1,7 +1,5 @@
 ## 03-asmVm
 ### part 1 :
-#### 我
-##### 我
 ```
 git pull origin master
 mingw32-make
@@ -95,7 +93,7 @@ exit program !
 
 ### part 2 :
 
-* sp\code\c\03-asmVm\gcc\01-add :
+#### sp\code\c\03-asmVm\gcc\01-add :
 
 ```
 // 用 gcc 編譯
@@ -121,7 +119,7 @@ PS D:\ccc\sp\code\c\03-asmVm\gcc\01-add> gcc -fverbose-asm -S main.c -o main.s
 PS D:\ccc\sp\code\c\03-asmVm\gcc\00-foobar> gcc -fverbose-asm -S foobar.c -o foobar.s
 ```
 
-* sp\code\c\03-asmVm\gcc\02-sum :
+#### sp\code\c\03-asmVm\gcc\02-sum :
 
 ```
 PS D:\110713305\sp\code\c\03-asmVm\gcc\02-sum> gcc -std=c99 sum.c main.c -o sum 
