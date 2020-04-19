@@ -1,4 +1,5 @@
 ## 03-asmVm
+### part 1 :
 ```
 git pull origin master
 mingw32-make
@@ -87,3 +88,24 @@ exit program !
 ```
 
 ![image](https://scontent.fkhh1-2.fna.fbcdn.net/v/t1.0-9/92523145_10157915162531893_6576188808188919808_n.jpg?_nc_cat=108&_nc_sid=1480c5&_nc_ohc=fqWf1on86g4AX8xqcrw&_nc_ht=scontent.fkhh1-2.fna&oh=84a14845a6ad6d98dc63adbf756217c8&oe=5EC3375C&dl=1)
+
+### part 2 :
+```
+sp\code\c\03-asmVm\gcc\01-add
+```
+
+```
+// 用 gcc 編譯
+PS D:\ccc\sp\code\c\03-asmVm\gcc\01-add> gcc main.c add.c -o add
+PS D:\ccc\sp\code\c\03-asmVm\gcc\01-add> ./add
+add(5, 8)=13
+
+// 用 gcc 產生組合語言
+PS D:\ccc\sp\code\c\03-asmVm\gcc\01-add> gcc -S add.c -o add.s
+```
+
+```
+// 產生組合語言 (有註解)
+PS D:\ccc\sp\code\c\03-asmVm\gcc\01-add> gcc -fverbose-asm -S add.c -o add.s
+PS D:\ccc\sp\code\c\03-asmVm\gcc\01-add> gcc -fverbose-asm -S main.c -o main.s
+```
