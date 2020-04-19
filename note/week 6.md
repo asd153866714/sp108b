@@ -345,4 +345,4 @@ PC=0018 I=0001 A=0001 D=0037 m[A]=0000
 PC=0019 I=E308 A=0001 D=0037 m[A]=0037 a=0 c=0C d=1 j=0
 exit program !
 
-[image](https://scontent.fkhh1-2.fna.fbcdn.net/v/t1.0-9/92523145_10157915162531893_6576188808188919808_n.jpg?_nc_cat=108&_nc_sid=1480c5&_nc_ohc=fqWf1on86g4AX8xqcrw&_nc_ht=scontent.fkhh1-2.fna&oh=84a14845a6ad6d98dc63adbf756217c8&oe=5EC3375C&dl=1)
+![image](https://scontent.fkhh1-2.fna.fbcdn.net/v/t1.0-9/92523145_10157915162531893_6576188808188919808_n.jpg?_nc_cat=108&_nc_sid=1480c5&_nc_ohc=fqWf1on86g4AX8xqcrw&_nc_ht=scontent.fkhh1-2.fna&oh=84a14845a6ad6d98dc63adbf756217c8&oe=5EC3375C&dl=1)
