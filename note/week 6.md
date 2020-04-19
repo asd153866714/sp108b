@@ -118,3 +118,13 @@ PS D:\ccc\sp\code\c\03-asmVm\gcc\01-add> gcc -fverbose-asm -S main.c -o main.s
 ```
 PS D:\ccc\sp\code\c\03-asmVm\gcc\00-foobar> gcc -fverbose-asm -S foobar.c -o foobar.s
 ```
+
+* sp\code\c\03-asmVm\gcc\02-sum :
+
+```
+PS D:\110713305\sp\code\c\03-asmVm\gcc\02-sum> gcc -std=c99 sum.c main.c -o sum 
+PS D:\110713305\sp\code\c\03-asmVm\gcc\02-sum> ./sum
+sum(10)=55
+PS D:\110713305\sp\code\c\03-asmVm\gcc\02-sum> gcc -fverbose-asm -S main.c -o main.s
+PS D:\110713305\sp\code\c\03-asmVm\gcc\02-sum> gcc -fverbose-asm -S main.c -o sum.s 
+```
