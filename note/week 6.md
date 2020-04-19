@@ -9,7 +9,7 @@ mingw32-make
 ./vm ../test/sum.bin
 ```
 
-* sp\code\c\03-asmVm\hack\c :
+#### sp\code\c\03-asmVm\hack\c :
 
 ```
 PS D:\110713305\sp\code\c\03-asmVm\hack\c> mingw32-make
