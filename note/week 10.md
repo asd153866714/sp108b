@@ -96,3 +96,47 @@ gcc: 嚴重錯誤：沒有輸入檔案
 編譯插斷。
 ```
 
+### 用 MSYS2 來操作
+### user@DESKTOP-9VVBDPS MINGW32 /d/110713305/sp/code/c/06-os1windows/03-msys2
+
+多工 Thread
+
+```
+user@DESKTOP-9VVBDPS MINGW32 /d/110713305/sp/code/c/06-os1windows/03-msys2
+$ gcc georgeMary.c -o georgeMary
+
+user@DESKTOP-9VVBDPS MINGW32 /d/110713305/sp/code/c/06-os1windows/03-msys2
+$ ./georgeMary
+George
+----------------
+Mary
+George
+----------------
+George
+Mary
+----------------
+----------------
+George
+Mary
+George
+----------------
+----------------
+George
+Mary
+----------------
+George
+George
+----------------
+Mary
+George
+----------------
+George
+----------------
+Mary
+----------------
+George
+----------------
+George
+
+Ctrl + c 停止
+```
