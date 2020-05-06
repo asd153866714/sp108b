@@ -55,7 +55,7 @@ int main(int argc, char *argv[]) {
 ```
 // 比較上面
 #include <stdio.h>
-#include <fcntl.h>
+#include <fcntl.h> // Linux 函示庫
 
 #define TEXT_SIZE 1000000
 
@@ -69,3 +69,27 @@ int main(int argc, char *argv[]) {
   printf("%s\n", text);
 }
 ```
+
+## 安裝 MSYS2
+
+```
+user@DESKTOP-9VVBDPS MINGW32 ~
+$ pacman -S gcc
+警告：gcc-7.4.0-1 已經為最新——重新安裝
+正在解決依賴關係…
+正在檢查衝突的軟體包…
+
+軟體包 (1) gcc-7.4.0-1
+
+總計安裝大小：  101.01 MiB
+淨升級大小：    0.00 MiB
+
+:: 進行安裝嗎？ [Y/n] n
+
+\\ 安裝成功打 gcc 會顯示
+user@DESKTOP-9VVBDPS MINGW32 ~
+$ gcc
+gcc: 嚴重錯誤：沒有輸入檔案
+編譯插斷。
+```
+
