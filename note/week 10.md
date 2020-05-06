@@ -162,3 +162,29 @@ $ ./race
 counter=-20026021
 
 ```
+
+解決方法 lock :
+
+```
+user@DESKTOP-9VVBDPS MINGW32 /d/110713305/sp/code/c/06-os1windows/04-pthread
+$ gcc norace.c -o norace
+
+user@DESKTOP-9VVBDPS MINGW32 /d/110713305/sp/code/c/06-os1windows/04-pthread
+$ ./norace
+counter=0
+
+```
+
+Deadlock :
+
+```
+user@DESKTOP-9VVBDPS MINGW32 /d/110713305/sp/code/c/06-os1windows/04-pthread
+$ gcc deadlock.c -o deadlock
+
+user@DESKTOP-9VVBDPS MINGW32 /d/110713305/sp/code/c/06-os1windows/04-pthread
+$ ./deadlock
+A lock x
+B lock y
+
+Ctrl + c 才會跳出
+```
