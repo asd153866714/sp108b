@@ -33,7 +33,7 @@ PS D:\ccc\course\sp\code\c\06-os1windows\02-forever> Stop-Process -name forever
 ```
 PS D:\ccc\course\sp\code\c\06-os1windows\01-stdc\02-cat> gcc cat.c -o cat
 
-// 用函示庫讀檔的方式
+// 用標準C 讀檔的方式
 PS D:\ccc\course\sp\code\c\06-os1windows\01-stdc\02-cat> ./cat cat.c     
 #include <stdio.h>
 
@@ -45,6 +45,26 @@ int main(int argc, char *argv[]) {
   char *fileName = argv[1];
   FILE *file = fopen(fileName, "rt");
   int len = fread(text, 1, TEXT_SIZE-1, file);
+  text[len] = 0;
+  printf("%s\n", text);
+}
+```
+
+### sp\code\c\06-os1windows\02-mingw\01-cat
+
+```
+// 比較上面
+#include <stdio.h>
+#include <fcntl.h>
+
+#define TEXT_SIZE 1000000
+
+char text[TEXT_SIZE];
+
+int main(int argc, char *argv[]) {
+  char *fileName = argv[1];
+  int fd = open(fileName, O_RDONLY);      // FILE *file = fopen(fileName, "rt");
+  int len = read(fd, text, TEXT_SIZE-1);  // int len = fread(text, 1, TEXT_SIZE-1, file);
   text[len] = 0;
   printf("%s\n", text);
 }
