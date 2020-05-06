@@ -31,7 +31,7 @@ Handles  NPM(K)    PM(K)      WS(K)     CPU(s)     Id  SI ProcessName
 PS D:\ccc\course\sp\code\c\06-os1windows\02-forever> Stop-Process -name forever
 ```
 
-### sp\code\c\06-os1windows\01-stdc\02-cat
+### sp\code\c\06-os1windows\01-stdc\02-cat :
 
 ```
 PS D:\ccc\course\sp\code\c\06-os1windows\01-stdc\02-cat> gcc cat.c -o cat
@@ -53,7 +53,7 @@ int main(int argc, char *argv[]) {
 }
 ```
 
-### sp\code\c\06-os1windows\02-mingw\01-cat
+### sp\code\c\06-os1windows\02-mingw\01-cat :
 
 ```
 // 比較上面
@@ -97,9 +97,9 @@ gcc: 嚴重錯誤：沒有輸入檔案
 ```
 
 ### 用 MSYS2 來操作
-### user@DESKTOP-9VVBDPS MINGW32 /d/110713305/sp/code/c/06-os1windows/03-msys2
+### user@DESKTOP-9VVBDPS MINGW32 /d/110713305/sp/code/c/06-os1windows/03-msys2 :
 
-多工 Thread
+多工執行緒
 
 ```
 user@DESKTOP-9VVBDPS MINGW32 /d/110713305/sp/code/c/06-os1windows/03-msys2
@@ -139,4 +139,26 @@ George
 George
 
 Ctrl + c 停止
+```
+
+### user@DESKTOP-9VVBDPS MINGW32 /d/110713305/sp/code/c/06-os1windows/04-pthread :
+
+競爭情況 race
+
+```
+user@DESKTOP-9VVBDPS MINGW32 /d/110713305/sp/code/c/06-os1windows/04-pthread
+$ gcc race.c -o race
+
+user@DESKTOP-9VVBDPS MINGW32 /d/110713305/sp/code/c/06-os1windows/04-pthread
+$ ./race
+counter=-56087443
+
+user@DESKTOP-9VVBDPS MINGW32 /d/110713305/sp/code/c/06-os1windows/04-pthread
+$ ./race
+counter=-19488285
+
+user@DESKTOP-9VVBDPS MINGW32 /d/110713305/sp/code/c/06-os1windows/04-pthread
+$ ./race
+counter=-20026021
+
 ```
