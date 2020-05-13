@@ -49,4 +49,46 @@ C 語言
 
 ```
 
+# C4 -- 500 行的 C 語言編譯器
+
+``` powershell
+
+PS D:\110713305\sp\code\c\08-compiler2\c4> gcc -m32 -w c4.c -o c4
+
+PS D:\110713305\sp\code\c\08-compiler2\c4> ./c4 test/hello.c
+hello, world
+exit(0) cycle = 9
+
+PS D:\110713305\sp\code\c\08-compiler2\c4> ./c4 -s test/hello.c
+2:
+3: int main()
+4: {
+5:   printf("hello, world\n");
+    ENT  0
+    IMM  10158168
+    PSH
+    PRTF
+    ADJ  1
+6:   return 0;
+    IMM  0
+    LEV
+7: }
+    LEV
+    
+PS D:\110713305\sp\code\c\08-compiler2\c4> ./c4 -d test/hello.c
+1> ENT  0
+2> IMM  11010136
+3> PSH
+4> PRTF
+hello, world
+5> ADJ  1
+6> IMM  0
+7> LEV
+8> PSH
+9> EXIT
+exit(0) cycle = 9
+
+
+```
+
 
