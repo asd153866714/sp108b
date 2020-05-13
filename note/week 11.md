@@ -51,6 +51,8 @@ C 語言
 
 # C4 -- 500 行的 C 語言編譯器
 
+* 參考 : https://github.com/ccccourse/sp/tree/master/code/c/08-compiler2/c4/doc
+
 ``` powershell
 
 PS D:\110713305\sp\code\c\08-compiler2\c4> gcc -m32 -w c4.c -o c4
