@@ -10,7 +10,7 @@ PS D:\ccc\course\sp\code\c\06-os1windows\02-forever> gcc forever.c -o forever
 PS D:\ccc\course\sp\code\c\06-os1windows\02-forever> ./forever
 
 PS D:\ccc\course\sp\code\c\06-os1windows\02-forever> Start-Process forever.exe
-// 此時會開出一個新視窗去跑 forever.exe
+# 此時會開出一個新視窗去跑 forever.exe
 
 PS D:\ccc\course\sp\code\c\06-os1windows\02-forever> Get-Process -name forever
 
