@@ -5,7 +5,7 @@
 
 ### sp\code\c\06-os1windows\01-stdc\01-forever : 
 
-```
+``` powershell
 PS D:\ccc\course\sp\code\c\06-os1windows\02-forever> gcc forever.c -o forever
 PS D:\ccc\course\sp\code\c\06-os1windows\02-forever> ./forever
 
@@ -33,7 +33,7 @@ PS D:\ccc\course\sp\code\c\06-os1windows\02-forever> Stop-Process -name forever
 
 ### sp\code\c\06-os1windows\01-stdc\02-cat :
 
-```
+``` powershell
 PS D:\ccc\course\sp\code\c\06-os1windows\01-stdc\02-cat> gcc cat.c -o cat
 
 // 用標準C 讀檔的方式
@@ -55,7 +55,7 @@ int main(int argc, char *argv[]) {
 
 ### sp\code\c\06-os1windows\02-mingw\01-cat :
 
-```
+``` powershell
 // 比較上面
 #include <stdio.h>
 #include <fcntl.h> // Linux 函示庫
@@ -75,7 +75,7 @@ int main(int argc, char *argv[]) {
 
 ## 安裝 MSYS2
 
-```
+``` powershell
 user@DESKTOP-9VVBDPS MINGW32 ~
 $ pacman -S gcc
 警告：gcc-7.4.0-1 已經為最新——重新安裝
@@ -101,7 +101,7 @@ gcc: 嚴重錯誤：沒有輸入檔案
 
 多工執行緒
 
-```
+``` powershell
 user@DESKTOP-9VVBDPS MINGW32 /d/110713305/sp/code/c/06-os1windows/03-msys2
 $ gcc georgeMary.c -o georgeMary
 
@@ -145,7 +145,7 @@ Ctrl + c 停止
 
 競爭情況 race
 
-```
+``` powershell
 user@DESKTOP-9VVBDPS MINGW32 /d/110713305/sp/code/c/06-os1windows/04-pthread
 $ gcc race.c -o race
 
@@ -165,7 +165,7 @@ counter=-20026021
 
 解決方法 lock :
 
-```
+``` powershell
 user@DESKTOP-9VVBDPS MINGW32 /d/110713305/sp/code/c/06-os1windows/04-pthread
 $ gcc norace.c -o norace
 
@@ -177,7 +177,7 @@ counter=0
 
 Deadlock :
 
-```
+``` powershell
 user@DESKTOP-9VVBDPS MINGW32 /d/110713305/sp/code/c/06-os1windows/04-pthread
 $ gcc deadlock.c -o deadlock
 
