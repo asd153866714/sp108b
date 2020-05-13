@@ -18,9 +18,9 @@ Handles  NPM(K)    PM(K)      WS(K)     CPU(s)     Id  SI ProcessName
 -------  ------    -----      -----     ------     --  -- -----------
      50       5      684       2716      17.03  10368   7 forever
 
-// 接著按 Ctrl-Alt-Del 選工作管理員，看有沒有 forever.exe
+# 接著按 Ctrl-Alt-Del 選工作管理員，看有沒有 forever.exe
 
-// 執行但不產生新視窗
+# 執行但不產生新視窗
 PS D:\ccc\course\sp\code\c\06-os1windows\02-forever> Start-Process -NoNewWindow forever.exe
 PS D:\ccc\course\sp\code\c\06-os1windows\02-forever> Get-Process -name forever
 
@@ -36,7 +36,7 @@ PS D:\ccc\course\sp\code\c\06-os1windows\02-forever> Stop-Process -name forever
 ``` powershell
 PS D:\ccc\course\sp\code\c\06-os1windows\01-stdc\02-cat> gcc cat.c -o cat
 
-// 用標準C 讀檔的方式
+# 用標準C 讀檔的方式
 PS D:\ccc\course\sp\code\c\06-os1windows\01-stdc\02-cat> ./cat cat.c     
 #include <stdio.h>
 
@@ -56,7 +56,7 @@ int main(int argc, char *argv[]) {
 ### sp\code\c\06-os1windows\02-mingw\01-cat :
 
 ``` powershell
-// 比較上面
+# 比較上面
 #include <stdio.h>
 #include <fcntl.h> // Linux 函示庫
 
@@ -75,7 +75,7 @@ int main(int argc, char *argv[]) {
 
 ## 安裝 MSYS2
 
-``` powershell
+``` bash
 user@DESKTOP-9VVBDPS MINGW32 ~
 $ pacman -S gcc
 警告：gcc-7.4.0-1 已經為最新——重新安裝
@@ -89,7 +89,7 @@ $ pacman -S gcc
 
 :: 進行安裝嗎？ [Y/n] n
 
-\\ 安裝成功打 gcc 會顯示
+# 安裝成功打 gcc 會顯示
 user@DESKTOP-9VVBDPS MINGW32 ~
 $ gcc
 gcc: 嚴重錯誤：沒有輸入檔案
@@ -101,7 +101,7 @@ gcc: 嚴重錯誤：沒有輸入檔案
 
 多工執行緒
 
-``` powershell
+``` bash
 user@DESKTOP-9VVBDPS MINGW32 /d/110713305/sp/code/c/06-os1windows/03-msys2
 $ gcc georgeMary.c -o georgeMary
 
@@ -138,14 +138,14 @@ George
 ----------------
 George
 
-Ctrl + c 停止
+# Ctrl + c 停止
 ```
 
 ### user@DESKTOP-9VVBDPS MINGW32 /d/110713305/sp/code/c/06-os1windows/04-pthread :
 
 競爭情況 race
 
-``` powershell
+``` bash
 user@DESKTOP-9VVBDPS MINGW32 /d/110713305/sp/code/c/06-os1windows/04-pthread
 $ gcc race.c -o race
 
@@ -165,7 +165,7 @@ counter=-20026021
 
 解決方法 lock :
 
-``` powershell
+``` bash
 user@DESKTOP-9VVBDPS MINGW32 /d/110713305/sp/code/c/06-os1windows/04-pthread
 $ gcc norace.c -o norace
 
@@ -177,7 +177,7 @@ counter=0
 
 Deadlock :
 
-``` powershell
+``` bash
 user@DESKTOP-9VVBDPS MINGW32 /d/110713305/sp/code/c/06-os1windows/04-pthread
 $ gcc deadlock.c -o deadlock
 
@@ -186,5 +186,5 @@ $ ./deadlock
 A lock x
 B lock y
 
-Ctrl + c 才會跳出
+# Ctrl + c 才會跳出
 ```
