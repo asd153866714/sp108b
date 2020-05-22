@@ -1,5 +1,5 @@
 # Test
-for
+### for
 ```
 user@DESKTOP-9VVBDPS MINGW64 /d/110713305/sp108b/homework/mid (master)
 $ ./compiler test/for.c
@@ -37,7 +37,7 @@ goto L1
 (L3)
 ```
 
-goto
+### goto
 ```
 user@DESKTOP-9VVBDPS MINGW64 /d/110713305/sp108b/homework/mid (master)
 $ ./compiler test/goto.c
