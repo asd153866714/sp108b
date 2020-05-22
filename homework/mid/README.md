@@ -1,7 +1,7 @@
 # 參考資料
 
-[break、 continue、goto]https://openhome.cc/Gossip/CGossip/BreakContinueGoto.html
-[for 迴圈]https://openhome.cc/Gossip/CGossip/forStatement.html
+[goto](https://openhome.cc/Gossip/CGossip/BreakContinueGoto.html)
+[for 迴圈](https://openhome.cc/Gossip/CGossip/forStatement.html)
 # Test
 
 ### for
