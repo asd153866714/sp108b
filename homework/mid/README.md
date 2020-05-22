@@ -1,4 +1,9 @@
+# 參考資料
+
+[break、 continue、goto]https://openhome.cc/Gossip/CGossip/BreakContinueGoto.html
+[for 迴圈]https://openhome.cc/Gossip/CGossip/forStatement.html
 # Test
+
 ### for
 ```
 user@DESKTOP-9VVBDPS MINGW64 /d/110713305/sp108b/homework/mid (master)
