@@ -1,3 +1,13 @@
+# msys2/01-curl
+
+安裝:
+`pacman` -S curl
+
+# msys2/02-wget
+
+安裝:
+`pacman -S wget`
+
 # ssh 遠端連上 Linux
 
 ssh guest@misavo.com
