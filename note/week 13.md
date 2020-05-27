@@ -14,13 +14,13 @@
 
 ## sqlite3
 
-安裝:
+安裝 :
 
 `pacman -S mingw-w64-x86_64-sqlite3`
 
 ## postgresql
 
-安裝:
+安裝 :
 
 `pacman -S mingw-w64-x86_64-postgresql`
 
