@@ -26,7 +26,7 @@
 
 先切到 pgsql/c/ 的資料夾
 
-## 修改資料庫的使用者名稱
+### 修改資料庫的使用者名稱
 使用者名稱為 user
 
 `user@DESKTOP-9VVBDPS MINGW64`
@@ -36,7 +36,7 @@
 ```
 #define connectStr "user=user dbname=testdb"
 ```
-## pghello
+### pghello
 ```
 $ ./pghello
 Version of libpq: 120002
