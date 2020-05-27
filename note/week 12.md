@@ -1,7 +1,7 @@
 # msys2/01-curl
 
 安裝:
-`pacman` -S curl
+`pacman -S curl`
 
 # msys2/02-wget
 
