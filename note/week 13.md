@@ -14,11 +14,15 @@
 
 ## sqlite3
 
+[SQLite教學](http://tw.gitbook.net/sqlite/index.html)
+
 安裝 :
 
 `pacman -S mingw-w64-x86_64-sqlite3`
 
 ## postgresql
+
+[PostgreSQL 正體中文使用手冊](https://docs.postgresql.tw/tutorial/the-sql-language/aggregate-functions)
 
 安裝 :
 
