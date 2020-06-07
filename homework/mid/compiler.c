@@ -177,7 +177,7 @@ void GOTO(){
 
 // GOTOlabel
 void GOTOlabel(){
-  char *item = next();
+  char *item = next(); 
   int temp = findName(item);
   if(temp==1){         
     int i = nextLabel();
