@@ -8,7 +8,7 @@
 
 也可以在本機開一個網頁當作客戶端，連上 localhost 測試
 
-[測試結果](sp108b/final/http_c/img)
+[測試結果](http_c/img)
 
 # 說明 (Server)
 
