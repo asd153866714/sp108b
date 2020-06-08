@@ -49,7 +49,7 @@ int main(int argc, char const *argv[])
     {
         printf("\n+++++++ Waiting for new connection ++++++++\n\n");
 
-        // 建立 socket 連線, 程式會被阻擋直到有新的請求(連線)
+        // 建立 socket 連線, 產生 new_socket 描述符, 程式會被阻擋直到有新的請求(連線)
         // server_fd 是伺服器的連線端口, sockaddr 儲存了客戶端的ip和port 
         if ((new_socket = accept(server_fd, (struct sockaddr *)&address, (socklen_t*)&addrlen))<0)
         {

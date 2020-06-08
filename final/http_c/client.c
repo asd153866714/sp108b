@@ -12,8 +12,14 @@
 int main(int argc, char const *argv[])
 {
     int sock = 0; long valread;
+
+    // <arpa/inet.h> 預設的 sockaddr_in 結構，用來儲存伺服端的資訊
     struct sockaddr_in serv_addr;
+
+    // 建立要傳給伺服端的訊息 (request)
     char *hello = "Hello from client\n";
+
+    // 建立接收訊息的緩衝區
     char buffer[1024] = {0};
 
     // 建立客戶端的 socket
