@@ -19,7 +19,23 @@
   5. 讀取資料
   6. 傳回資料給客戶端
   7. 關閉 socket 連線
+  
+### 定義伺服器端資訊
 
+使用 `<netinet/in.h>` 裡定義的 `struct sockaddr_in` 結構來儲存資訊
+包含伺服器的 ip 和 port
+
+```
+struct sockaddr_in address;
+```
+
+
+
+```
+address.sin_family = AF_INET;          
+address.sin_addr.s_addr = INADDR_ANY;   
+address.sin_port = htons( PORT );       
+```
 ### 1. 建立連線
 
 ```
@@ -61,6 +77,11 @@ if ((new_socket = accept(server_fd, (struct sockaddr *)&address, (socklen_t*)&ad
 ```
 
 ### 5. 讀取資料
+
+```
+char buffer[30000] = {0};
+valread = read( new_socket , buffer, 30000);
+```
 
 ### 6. 傳回資料
 
