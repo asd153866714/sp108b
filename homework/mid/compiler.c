@@ -14,12 +14,12 @@ char  *labelName[TMAX];
 #define nextLabel() (labelIdx++)
 #define emit printf
 
-int findName(char *set) {  //找labelName裡面有沒有相同字串 有的話傳回位置。沒有傳回-1表示要新增
+int findName(char *set) {  // 找labelName裡面有沒有相同字串 有的話傳回位置。沒有傳回-1表示要新增
   char eset[SMAX], elabel[SMAX];
   sprintf(eset, " %s ", set);
   for (int i=0; i<=labelIdx; i++){
     sprintf(elabel, " %s ", labelName[i]);
-    //printf("set=(%s) isnext=(%s) labelIdx=(%d)\n",eset , elabel, i);
+    // printf("set=(%s) isnext=(%s) labelIdx=(%d)\n",eset , elabel, i);
     if(strstr(eset, elabel) != NULL){ return i; }
   }
   return 1 ;
@@ -32,12 +32,12 @@ int isNext(char *set) {
   return (tokenIdx < tokenTop && strstr(eset, etoken) != NULL);
 }
 
-//偵測兩個字以後
+// 偵測兩個字以後
 int isNext2(char *set) {
   char eset[SMAX], etoken[SMAX];
   sprintf(eset, " %s ", set);
   sprintf(etoken, " %s ", tokens[tokenIdx+1]);
-  //printf("set=(%s) isnext=(%s) tokenIdx=(%d)\n",eset , etoken, tokenIdx+1);
+  // printf("set=(%s) isnext=(%s) tokenIdx=(%d)\n",eset , etoken, tokenIdx+1);
   return (tokenIdx < tokenTop && strstr(eset, etoken) != NULL);
 }
 
@@ -118,6 +118,7 @@ void WHILE() {
   emit("(L%d)\n", whileEnd);
 }
 
+// FOR = for (ASSIGN; E; ASSIGN) BLOCK
 void FOR() {
   int forCond = nextLabel();
   int forInc = nextLabel();
