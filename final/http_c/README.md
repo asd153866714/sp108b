@@ -24,8 +24,6 @@
 
 客戶端在連線的時候需要知道伺服器端的連線資訊
 
-
-
 ```
 struct sockaddr_in address;
 ```
