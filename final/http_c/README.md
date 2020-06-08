@@ -130,7 +130,7 @@ valread = read( new_socket , buffer, 30000);
 
 # Clinet
 
-差別:
+* 差別:
 
   接收請求的`accept()` 換成和伺服器建立連線的`connect()`
   
