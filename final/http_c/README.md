@@ -8,7 +8,7 @@
 
 也可以在本機開一個網頁當作客戶端，連上 localhost 測試
 
-# 說明
+# 說明 (Server)
 
 流程 :
 
@@ -127,6 +127,14 @@ valread = read( new_socket , buffer, 30000);
 ## 7. 關閉連線
 
 `close(new_socket);`
+
+# Clinet
+
+差別:
+
+  接收請求的`accept()` 換成和伺服器建立連線的`connect()`
+  
+  讀取請求資料的`write()`換成發送請求的`send()` 
 
 # 參考範例
 https://medium.com/from-the-scratch/http-server-what-do-you-need-to-know-to-build-a-simple-http-server-from-scratch-d1ef8945e4fa
