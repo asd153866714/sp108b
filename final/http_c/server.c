@@ -11,7 +11,9 @@
 int main(int argc, char const *argv[])
 {
     int server_fd, new_socket; long valread;
-    struct sockaddr_in address;     // 建立
+    
+    // 建立預設的 sockaddr_in 結構，用來儲存伺服端的資訊
+    struct sockaddr_in address;     
     int addrlen = sizeof(address);
     
     // 建立要傳回給客戶端的訊息 (respond)
@@ -25,7 +27,7 @@ int main(int argc, char const *argv[])
         exit(EXIT_FAILURE);
     }
     
-
+    // 伺服器端的資訊
     address.sin_family = AF_INET;           // ipv4
     address.sin_addr.s_addr = INADDR_ANY;   // 0.0.0.0
     address.sin_port = htons( PORT );       // 80 port
