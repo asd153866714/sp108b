@@ -135,7 +135,7 @@ void DO_WHILE(){
   skip(";");
 }
 
-// FOR = for (ASSIGN; E; ASSIGN) BLOCK
+// FOR = for (STMT; E; ASSIGNfor) STMT
 void FOR() {
   int forCond = nextLabel();
   int forInc = nextLabel();
@@ -143,18 +143,18 @@ void FOR() {
   int forEnd = nextLabel();
   skip("for");
   skip("(");
-  STMT();          // i=1
+  STMT();            // i=1;
   emit("(L%d)\n", forCond);
-  int e = E();       // i<3
+  int e = E();       // i<5;
   emit("if T%d goto L%d\n", e, forBegin);
   emit("goto L%d\n", forEnd);
   skip(";");
   emit("(L%d)\n", forInc);
-  ASSIGNfor();      // i=i+1
+  ASSIGNfor();       // i=i+1
   emit("goto L%d\n", forCond);
   skip(")");
   emit("(L%d)\n", forBegin);
-  STMT();
+  STMT();            // a=a+1;
   emit("goto L%d\n", forInc);
   emit("(L%d)\n", forEnd);
 }
