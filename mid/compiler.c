@@ -143,7 +143,7 @@ void FOR() {
   int forEnd = nextLabel();
   skip("for");
   skip("(");
-  ASSIGN();          // i=1
+  STMT();          // i=1
   emit("(L%d)\n", forCond);
   int e = E();       // i<3
   emit("if T%d goto L%d\n", e, forBegin);
@@ -154,7 +154,7 @@ void FOR() {
   emit("goto L%d\n", forCond);
   skip(")");
   emit("(L%d)\n", forBegin);
-  BLOCK();
+  STMT();
   emit("goto L%d\n", forInc);
   emit("(L%d)\n", forEnd);
 }
