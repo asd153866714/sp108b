@@ -1,5 +1,5 @@
 # Test
-
+`lex` 和 `dump` 的部分以 `...` 省略
 ### for
 ```
 user@DESKTOP-9VVBDPS MINGW64 /d/110713305/sp108b/homework/mid (master)
@@ -79,47 +79,9 @@ do {i = i+1;
 }while (i<10);
 
 ========== lex ==============
-token=i
-token==
-token=1
-token=;
-token=do
-token={
-token=i
-token==
-token=i
-token=+
-token=1
-token=;
-token=}
-token=while
-token=(
-token=i
-token=<
-token=10
-token=)
-token=;
+...
 ========== dump ==============
-0:i
-1:=
-2:1
-3:;
-4:do
-5:{
-6:i
-7:=
-8:i
-9:+
-10:1
-11:;
-12:}
-13:while
-14:(
-15:i
-16:<
-17:10
-18:)
-19:;
+...
 ============ parse =============
 t0 = 1
 i = t0
