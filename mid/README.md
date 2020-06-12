@@ -1,9 +1,9 @@
 # 說明
 1. 編譯器擴充自老師的課堂範例， if, goto, for, do_while 語法則是新加入的。
-2. if, for, do_while 是我原創的，goto 不是原創
-3. goto 是直接複製的[曾楷崴](https://github.com/w21917179/sp108b/blob/master/midterm/compiler.c) 同學的
+2. if, for, do_while 是我原創的，goto 不是原創。
+3. goto 是直接複製的[曾楷崴](https://github.com/w21917179/sp108b/blob/master/midterm/compiler.c) 同學的。
 3. 參考老師的範例之後，我讀懂了，於是完全靠自己寫出 if, goto, for 擴充部分。
-4.  if, for, do_while 我完全可以理解， goto 部分理解。
+4.  if, for, do_while 我完全可以理解， goto 只有部分理解。
 
 # 測試結果
 `lex` 和 `dump` 的部分以 `...` 省略
