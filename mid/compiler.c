@@ -118,6 +118,23 @@ void WHILE() {
   emit("(L%d)\n", whileEnd);
 }
 
+// DO_WHILE = do (STMT) while (E)
+void DO_WHILE(){
+  int doBegin = nextLabel();
+  int doEnd = nextLabel();
+  emit("(L%d)\n", doBegin);
+  skip("do");
+  STMT();
+  skip("while");
+  skip("(");
+  int e = E();
+  emit("if not T%d goto L%d\n", e, doEnd);
+  emit("goto L%d\n", doBegin);
+  emit("(L%d)\n", doEnd);
+  skip(")");
+  skip(";");
+}
+
 // FOR = for (ASSIGN; E; ASSIGN) BLOCK
 void FOR() {
   int forCond = nextLabel();
@@ -196,11 +213,13 @@ void STMT() {
   if (isNext("while"))
     return WHILE();
   else if (isNext("if"))
-    IF();
+    return IF();
   else if (isNext("for"))
     return FOR();
   else if (isNext("goto"))
-    GOTO();
+    return GOTO();
+  else if (isNext("do"))
+    return DO_WHILE();
   else if (isNext("{"))
     BLOCK();
   else if (isNext2(":"))

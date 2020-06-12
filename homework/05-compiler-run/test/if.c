@@ -1,6 +1,8 @@
 a = 3;
 b = 5;
-if (a > b)
+if (a > b){
   t = a;
-else
+}
+else{
   t = b;
+}
