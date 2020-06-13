@@ -126,11 +126,31 @@ void WHILE() {
   // emit("(L%d)\n", whileEnd);
 }
 
+void IF(){
+  int ifBegin = nextLabel();
+  int ifEnd = nextLabel();
+  skip("if");
+  skip("(");
+  int e = E();
+  irEmitIfNotGoto(e, ifBegin);
+  skip(")");
+  STMT();
+  irEmitGoto(ifEnd);
+  irEmitLabel(ifBegin);
+  if (isNext("else")){
+    skip("else");
+    STMT;
+  }
+  irEmitLabel(ifEnd);
+}
+
 void STMT() {
   if (isNext("while"))
     WHILE();
   // else if (isNext("if"))
   //   IF();
+  else if (isNext("if"))
+    IF();
   else if (isNext("{"))
     BLOCK();
   else {
