@@ -1,3 +1,6 @@
+# 參考範例
+https://medium.com/from-the-scratch/http-server-what-do-you-need-to-know-to-build-a-simple-http-server-from-scratch-d1ef8945e4fa
+
 # httpServer
 
 一個簡單的 httpServer
@@ -137,6 +140,3 @@ valread = read( new_socket , buffer, 30000);
   * 接收請求的`accept()` => 和伺服器建立連線的`connect()`
   
   * 讀取請求資料的`write()` => 發送請求的`send()` 
-
-# 參考範例
-https://medium.com/from-the-scratch/http-server-what-do-you-need-to-know-to-build-a-simple-http-server-from-scratch-d1ef8945e4fa
